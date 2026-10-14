@@ -11,7 +11,7 @@
 [![SIMD Acceleration](https://img.shields.io/badge/Hardware%20SIMD-AVX--512%20%7C%20ARM64-FF6F00?style=flat-square)](https://github.com/lgcorzo/sha256-simd)
 
 ### **Industrial AI Architect | MLOps, LLMOps and Agentic Systems**
-*Ph.D. in Engineering · Head of AI @ Lantek · 15+ Years in Physical & Industrial Systems*
+*Ph.D. in Engineering · AI Architect @ Lantek · 15+ Years in Physical & Industrial Systems*
 
 [Portfolio Website](https://lgcorzo.github.io/) • [LinkedIn](https://www.linkedin.com/in/lgcorzo/) • [Curriculum Knowledge Base](https://notebook.google.com/notebook/ea63f8a7-1f9d-4326-8222-9e4429f37f90) • [Architecture Deep Dives](https://lgcorzo.github.io/architecture.html)
 

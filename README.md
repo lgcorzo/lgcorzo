@@ -25,7 +25,7 @@ I design and engineer AI systems that bridge **industrial applications, machine 
 
 My engineering background spans over 15 years in **mission-critical physical systems**—including railway traction converters (CAF), early 100% electric transit power systems (JEMA/Irizar), industrial 3D vision robotics (Inser Robótica), and a Doctorate in Electronics & Machine Vision (Tecnun/CEIT). 
 
-Today, as **Head of AI at Lantek Sheet Metal Solutions**, I lead enterprise AI initiatives across CAD/CAM/MES platforms, transforming exploratory algorithms into reproducible, observable, testable, and secure production platforms.
+Today, as **AI Architect at Lantek Sheet Metal Solutions**, I lead enterprise AI initiatives across CAD/CAM/MES platforms, transforming exploratory algorithms into reproducible, observable, testable, and secure production platforms.
 
 My public technical ecosystem focuses on:
 - **Reproducible MLOps & LLMOps:** Production-packaged pipelines replacing fragile notebooks with versioned data, model lineage, prompt observability, and automated quality gates.

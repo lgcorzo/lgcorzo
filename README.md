@@ -65,6 +65,7 @@ Orchestrating reliable generative AI and multi-agent coordination:
 - **[`llmops-python-package`](https://github.com/lgcorzo/llmops-python-package):** Domain-driven LLMOps architecture adhering to ISO/IEC/IEEE 42010:2022 and 15289:2019 standards. Provides prompt evaluation, schema-validated agent interfaces, MCP tool integration, and automated OpenWiki architectural documentation.
 - **[`fastapi-autogen-team`](https://github.com/lgcorzo/fastapi-autogen-team):** High-throughput AI service written in native Rust with Axum and Rig, exposing OpenAI-compatible streaming Server-Sent Events (SSE) for multi-agent squads (Planner, Searcher, QA).
 - **[`R2R-Engine`](https://github.com/lgcorzo/R2R-Engine) & [`R2R-Application`](https://github.com/lgcorzo/R2R-Application):** State-of-the-art multimodal Retrieval-Augmented Generation (RAG) platform featuring hybrid knowledge graph indexing and a Next.js/React observability dashboard.
+- **[`dark-litellm`](https://github.com/lgcorzo/dark-litellm):** Sovereign, hardened enterprise LLM proxy and router for multi-model governance, deployed to GHCR and PyPI under automated vulnerability scanning and hermetic builds.
 
 ### 4. 🦀 Autonomous Software Factories & Systems Engineering
 Advanced research in autonomous software delivery under formal governance:

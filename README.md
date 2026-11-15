@@ -87,6 +87,7 @@ First-party production packages and enterprise systems where the autonomous fact
 - **[`llmops-python-package`](https://github.com/lgcorzo/llmops-python-package):** Domain-driven LLMOps platform adhering to ISO/IEC/IEEE 42010:2022 and 15289:2019 standards, featuring prompt evaluations, MCP tool registries, and auto-generated OpenWiki architecture wikis.
 - **[`fastapi-autogen-team`](https://github.com/lgcorzo/fastapi-autogen-team):** High-throughput microservice in native Rust (Axum + Rig), exposing OpenAI-compatible streaming SSE endpoints for multi-agent squads (Planner, Searcher, QA).
 - **[`devops_job_shop_scheduling`](https://github.com/lgcorzo/devops_job_shop_scheduling):** Industrial operations research and genetic algorithm optimization for the Job Shop Scheduling Problem (JSP).
+- **[`cod_fish_classification_keras_model`](https://github.com/lgcorzo/cod_fish_classification_keras_model):** Industrial computer vision pipeline for conveyor-belt fish species classification (`HYSE`, `SEI`, `TORSK`, `LASK`) and length measurement at 2 units/sec using Faster R-CNN (VGG-16 / Keras).
 - **[`semantica`](https://github.com/lgcorzo/semantica):** Semantic domain modeling, ontologies, and knowledge graphs for complex physical systems.
 
 ### 3. 🍴 Maintained Forks (Self-Hosted Infrastructure)

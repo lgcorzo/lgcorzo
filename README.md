@@ -37,15 +37,15 @@ The architecture demonstrates how a Kubernetes-native control plane orchestrates
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                               SOVEREIGN KUBERNETES CLUSTER (GitOps / FluxCD)                          │
+│                               SELF-HOSTED KUBERNETES CLUSTER (GitOps / FluxCD)                        │
 │                                                                                                        │
 │  ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐  │
-│  │ 🔒 PROTECTED CORE FACTORY PLANE (High-Privilege / Zero-Trust)                                    │  │
+│  │ 🔒 PROTECTED CORE FACTORY PLANE (mTLS, per-identity policies, audit logs)                        │  │
 │  │                                                                                                  │  │
 │  │  • Dark Gravity Orchestrator (rust_CACD_autonomous_factory - Hatchet DAG, W3C-VC NHI Tokens)    │  │
 │  │  • Jules Remediation Daemon (FluxCD alert webhooks, MLflow run tracking)                         │  │
 │  │  • Enterprise LLM Gateway (LiteLLM hardened router, Antigravity streaming proxy)                │  │
-│  │  • Sovereign Object Storage Tier (Self-hosted MinIO, Operator, KES, DirectPV)                   │  │
+│  │  • Self-hosted Object Storage (MinIO, Operator, KES, DirectPV)                                  │  │
 │  └───────────────────────────────────┬──────────────────────────────────────────────────────────────┘  │
 │                                      │                                                                 │
 │             Orchestration Directives │ Enforces Strict Sandboxing, CI/CD Gates & Non-Human IDs         │
@@ -56,7 +56,7 @@ The architecture demonstrates how a Kubernetes-native control plane orchestrates
 │  │                                                                                                  │  │
 │  │  ┌──────────────────────────────────────────────┐  ┌──────────────────────────────────────────┐  │  │
 │  │  │ 📦 OWNED DOMAINS & APPLICATIONS              │  │ 🍴 FORKED & HARDENED UPSTREAMS           │  │  │
-│  │  │ (Agent targets: code generation, PRs, tests) │  │ (Sovereignty, bugfixes & hardware SIMD)  │  │  │
+│  │  │ (Agent targets: code generation, PRs, tests) │  │ (Security patches, bugfixes & SIMD)      │  │  │
 │  │  │                                              │  │                                          │  │  │
 │  │  │ • mlops-python-package (DVC, MLflow, Hydra)  │  │ • superpowers (Agentic execution harness)│  │  │
 │  │  │ • llmops-python-package (ISO 42010 OpenWiki) │  │ • spec-kit (Spec-Driven Development)     │  │  │
@@ -72,7 +72,7 @@ The architecture demonstrates how a Kubernetes-native control plane orchestrates
 
 ## 📂 Repository Topology: Core vs. Owned vs. Forked
 
-The repositories in this profile are structured into three distinct operational tiers to guarantee that untrusted or agentic code changes cannot compromise the core factory infrastructure:
+The repositories in this profile are structured into three tiers, designed to limit the impact of untrusted or agent-generated changes on the core factory infrastructure (sandboxing, CI gates and human review):
 
 ### 1. 🔒 Protected Core Factory & Infrastructure (Kubernetes-Native)
 The control plane and governance spine. These components run inside Kubernetes and direct autonomous agent operations, manage cryptographic non-human identities, route LLM traffic, and guard the cluster:
@@ -89,16 +89,16 @@ First-party production packages and enterprise systems where the autonomous fact
 - **[`devops_job_shop_scheduling`](https://github.com/lgcorzo/devops_job_shop_scheduling):** Industrial operations research and genetic algorithm optimization for the Job Shop Scheduling Problem (JSP).
 - **[`semantica`](https://github.com/lgcorzo/semantica):** Semantic domain modeling, ontologies, and knowledge graphs for complex physical systems.
 
-### 3. 🍴 Forked Upstreams & Sovereign Infrastructure
-Upstream open-source ecosystems maintained to guarantee supply-chain sovereignty, apply security hardening, patch critical bugs, or inject low-level hardware optimizations:
+### 3. 🍴 Maintained Forks (Self-Hosted Infrastructure)
+Forks of upstream open-source projects (some archived upstream) that I maintain to apply security patches, fix bugs, publish signed builds, or add low-level SIMD optimizations:
 - **Autonomous & Spec Tooling Upstreams:**
   - **[`superpowers`](https://github.com/lgcorzo/superpowers):** Upstream fork of the agentic execution harness, integrating TDD workflows and review checkpoints.
   - **[`spec-kit`](https://github.com/lgcorzo/spec-kit):** Upstream fork of GitHub Spec Kit for Spec-Driven Development (SDD) tooling and CLI scaffolding.
 - **Multimodal AI & RAG Infrastructure:**
   - **[`R2R-Engine`](https://github.com/lgcorzo/R2R-Engine) & [`R2R-Application`](https://github.com/lgcorzo/R2R-Application):** Hardened enterprise RAG platform with hybrid search, knowledge graph indexing, and full-stack observability.
-  - **[`dark-litellm`](https://github.com/lgcorzo/dark-litellm):** Enterprise sovereign router and proxy for multi-model governance, scanned with Trivy and built hermetically.
-- **Sovereign Object Storage Tier (Self-Hosted on Kubernetes):**
-  - **[`minio`](https://github.com/lgcorzo/minio), [`operator`](https://github.com/lgcorzo/operator), [`mc`](https://github.com/lgcorzo/mc), [`kes`](https://github.com/lgcorzo/kes), [`directpv`](https://github.com/lgcorzo/directpv):** Complete sovereign S3 storage stack deployed on bare-metal Kubernetes, eliminating external cloud dependency for datasets, models, and build artifacts.
+  - **[`dark-litellm`](https://github.com/lgcorzo/dark-litellm):** Self-hosted LLM router and proxy for multi-model governance, scanned with Trivy and built hermetically.
+- **Self-Hosted Object Storage (on Kubernetes):**
+  - **[`minio`](https://github.com/lgcorzo/minio), [`operator`](https://github.com/lgcorzo/operator), [`mc`](https://github.com/lgcorzo/mc), [`kes`](https://github.com/lgcorzo/kes), [`directpv`](https://github.com/lgcorzo/directpv):** Self-hosted S3-compatible storage stack on bare-metal Kubernetes, removing the dependency on external cloud storage for datasets, models, and build artifacts.
 - **Hardware SIMD Primitives (AVX-512 & ARM64 Assembly):**
   - **[`sha256-simd`](https://github.com/lgcorzo/sha256-simd):** Up to 8x accelerated cryptographic hashing (>3 GB/s per core).
   - **[`highwayhash`](https://github.com/lgcorzo/highwayhash):** Native assembly hashing exceeding 10 GB/s per core.

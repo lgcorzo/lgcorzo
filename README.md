@@ -19,6 +19,16 @@
 
 ---
 
+## 👋 About me
+
+- **Who:** Ph.D. in Engineering and AI Architect at [Lantek](https://www.lantek.com) (Bilbao), with 15+ years building industrial software.
+- **What I do:** MLOps/LLMOps platforms, software supply-chain security (signed builds, dependency remediation, patched forks), and computer vision for industrial inspection.
+- **Main project:** [Dark Gravity](https://github.com/lgcorzo/rust_CACD_autonomous_factory), a Rust orchestrator that runs coding agents in sandboxes with CI gates and human review.
+- **How to read this profile:** repos are split into owned projects and maintained forks; agent-made commits and PRs are labelled so automated work is easy to tell apart from manual work.
+- **Contact:** [LinkedIn](https://www.linkedin.com/in/lgcorzo/) · [Portfolio](https://lgcorzo.github.io/)
+
+---
+
 ## 🏗️ Ecosystem Architecture: The Autonomous Factory Pattern
 
 This GitHub ecosystem represents an **end-to-end blueprint of an Autonomous Software Factory**. 

@@ -77,8 +77,8 @@ The repositories in this profile are structured into three tiers, designed to li
 ### 1. 🔒 Protected Core Factory & Infrastructure (Kubernetes-Native)
 The control plane and governance spine. These components run inside Kubernetes and direct autonomous agent operations, manage cryptographic non-human identities, route LLM traffic, and guard the cluster:
 - **[`rust_CACD_autonomous_factory`](https://github.com/lgcorzo/rust_CACD_autonomous_factory) (Dark Gravity):** The brain of the factory. A Rust-based Continuous Architecture & Continuous Delivery (CA/CD) orchestrator coordinating a 6-phase DAG (Hatchet), minting Ed25519-signed Verifiable Credentials for Non-Human Identities (NHI), and dispatching missions into gVisor-isolated sandboxes.
-- **[`Jules_remediator`](https://github.com/lgcorzo/Jules_remediator):** Automated Kubernetes incident remediator. Listens to FluxCD reconciliation alerts, classifies runtime errors, logs MLOps experiments to MLflow, and instructs agents to synthesize targeted PR patches.
-- **[`gitops_internal_lgcorzo`](https://github.com/lgcorzo/gitops_internal_lgcorzo):** GitOps single source of truth managing the Kubernetes cluster state via FluxCD. Hosts infrastructure definitions, sealed secrets, and the internal LiteLLM LLM gateway with pre-warmed streaming proxies.
+- **Internal Incident Remediation Service:** Automated Kubernetes incident remediator. Listens to FluxCD reconciliation alerts, classifies runtime errors, logs MLOps experiments to MLflow, and instructs agents to synthesize targeted PR patches.
+- **Internal GitOps Control Plane:** GitOps single source of truth managing the Kubernetes cluster state via FluxCD. Hosts infrastructure definitions, sealed secrets, and the internal LiteLLM LLM gateway with pre-warmed streaming proxies.
 - **[`speckit-superpowers-bridge`](https://github.com/lgcorzo/speckit-superpowers-bridge):** The formal contract bridge uniting Spec-Driven Development (Spec Kit—defining **WHAT** via constitution, spec, plan, and tasks) with Superpowers execution discipline (**HOW** via TDD, subagents, and isolated worktrees).
 
 ### 2. 🚀 Owned Applications & Domain Standards

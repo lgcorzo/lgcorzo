@@ -13,7 +13,7 @@
 ### **Industrial AI Architect | MLOps, LLMOps & Autonomous Agent Factories**
 *Ph.D. in Engineering · AI Architect @ Lantek · 15+ Years in Mission-Critical Systems*
 
-[Portfolio Website](https://lgcorzo.github.io/) • [LinkedIn](https://www.linkedin.com/in/lgcorzo/) • [Curriculum Knowledge Base](https://notebook.google.com/notebook/ea63f8a7-1f9d-4326-8222-9e4429f37f90) • [Architecture Deep Dives](https://lgcorzo.github.io/architecture.html)
+[Start Here Portal](https://lgcorzo.github.io/start-here) • [AI Agents Guide](https://lgcorzo.github.io/ai-agents) • [AI Auditor Pack](https://lgcorzo.github.io/docs/auditor/) • [Agent Manifest](./DARK_GRAVITY_MANIFEST.md) • [Repository Map](./REPOSITORIES.md) • [Portfolio Website](https://lgcorzo.github.io/) • [LinkedIn](https://www.linkedin.com/in/lgcorzo/) • [Architecture Deep Dives](https://lgcorzo.github.io/architecture.html)
 
 </div>
 
@@ -76,7 +76,7 @@ The repositories in this profile are structured into three tiers, designed to li
 
 ### 1. 🔒 Protected Core Factory & Infrastructure (Kubernetes-Native)
 The control plane and governance spine. These components run inside Kubernetes and direct autonomous agent operations, manage cryptographic non-human identities, route LLM traffic, and guard the cluster:
-- **[`rust_CACD_autonomous_factory`](https://github.com/lgcorzo/rust_CACD_autonomous_factory) (Dark Gravity):** The brain of the factory. A Rust-based Continuous Architecture & Continuous Delivery (CA/CD) orchestrator coordinating a 6-phase DAG (Hatchet), minting Ed25519-signed Verifiable Credentials for Non-Human Identities (NHI), and dispatching missions into gVisor-isolated sandboxes.
+- **[`rust_CACD_autonomous_factory`](https://github.com/lgcorzo/rust_CACD_autonomous_factory) (Dark Gravity):** The brain of the factory. A Rust-based Continuous Architecture & Continuous Delivery (CA/CD) orchestrator executing a **5-step Hatchet durable DAG** post-Kafka `mission-ingestion`, minting Ed25519-signed Verifiable Credentials for Non-Human Identities (NHI), and dispatching missions into gVisor-isolated sandboxes.
 - **Internal Incident Remediation Service:** Automated Kubernetes incident remediator. Listens to FluxCD reconciliation alerts, classifies runtime errors, logs MLOps experiments to MLflow, and instructs agents to synthesize targeted PR patches.
 - **Internal GitOps Control Plane:** GitOps single source of truth managing the Kubernetes cluster state via FluxCD. Hosts infrastructure definitions, sealed secrets, and the internal LiteLLM LLM gateway with pre-warmed streaming proxies.
 - **[`speckit-superpowers-bridge`](https://github.com/lgcorzo/speckit-superpowers-bridge):** The formal contract bridge uniting Spec-Driven Development (Spec Kit—defining **WHAT** via constitution, spec, plan, and tasks) with Superpowers execution discipline (**HOW** via TDD, subagents, and isolated worktrees).
